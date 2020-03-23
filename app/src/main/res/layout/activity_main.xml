@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" />
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="#212121"
+        android:gravity="center"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="41dp"
+        android:layout_height="61dp"
+        android:layout_alignBottom="@+id/home"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginBottom="0dp"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/settings" />
+
+    <TextView
+        android:id="@+id/mfu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/artists"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="131dp"
+        android:layout_marginRight="131dp"
+        android:layout_marginBottom="43dp"
+        android:text="Made For You"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/artists"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/albums"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="80.5dp"
+        android:layout_marginRight="80.5dp"
+        android:layout_marginBottom="51dp"
+        android:background="#212121"
+        android:gravity="center"
+        android:onClick="openArtistActivity"
+        android:text="Artists"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/albums"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80.5dp"
+        android:layout_marginRight="80.5dp"
+        android:layout_marginBottom="250dp"
+        android:background="#212121"
+        android:gravity="center"
+        android:onClick="openAlbumActivity"
+        android:text="Albums"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/bf"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_alignBottom="@+id/albums"
+        android:layout_marginBottom="-161dp"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:text="Welcome 2 BootLeg Spotify AKA Spotifly"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</RelativeLayout>
